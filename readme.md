@@ -59,7 +59,7 @@
 <!-- The following are just sample -->
 Description of the project in details.
 
-- Project: Wireframe, Resume Website, Emmit Code, Html and Css
+- Project: website, hero card, css code, html
 - Properly know how to use Github and become more professional in creating a project
 - Trial and Error, Knowledge, Learnings, Self-Developing
 - Html and Css in Visual Studio Code A section of computer code is defined by the <code> element. The default monospace typeface of the browser is used to display the material inside. Css for to edit fonts, size, color etc..
@@ -68,7 +68,7 @@ Description of the project in details.
 <!-- The following are just sample -->
 - MultiPage Website
 - functional website
-- Transactional
+
 
 ### Technology
 <!-- TODO: List of Technology Used -->
