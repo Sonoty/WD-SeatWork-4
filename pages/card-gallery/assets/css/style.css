@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    width: calc(100dvw - 1.4rem);
+    display: flex;
+    justify-content: flex-end;
+    padding: .7rem 1rem;
+    gap: 1rem;
+    color: black;
+    height: fit-content;
+
+    
+    & .btn {
+        background: blueviolet;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.301);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        font-size: 1.2rem;
+        border: 1px solid rgba(245, 245, 245, 0.212);
+        padding: .2rem .5rem;
+        border-radius: 3px;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--color-primary-1);
+        overflow: hidden;
+        transition: all .2s ease;
+        
+        &.active {
+            background: rgba(255, 255, 255, 0.479);
+        }
+        
+        &::before {
+            position: absolute;
+            width: 10px;
+            height: 50px;
+            z-index: -1;
+            background: rgba(255, 255, 255, 0.1);
+            display: block;
+            content: '';
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transform: skew(20deg) translateY(-5px) translateX(40px);
+            transition: all .2s ease;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            &::before {
+                transform: skew(20deg) translateY(-5px) translateX(-20px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        & .btn {
+            font-size: 1rem;
+        }
+    }
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.card h2 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
